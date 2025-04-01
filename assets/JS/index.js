@@ -34,7 +34,7 @@ function redirecionamentoHome(e){
     e.preventDefault(); 
     
     
-    if (window.location.pathname.includes("home.html"))
+    if (window.location.pathname.includes("index.html"))
     {
       window.scrollTo({
       top: 0,
@@ -45,12 +45,12 @@ function redirecionamentoHome(e){
     
     else if(window.location.pathname.includes("/produtos/index.html"))
     {
-      window.location.assign("/home.html")
+      window.location.assign("/index.html")
     }
     
     
     else
-    window.location.assign("home.html");
+    window.location.assign("index.html");
 }
 
 function redirecionamentoSecaoProdutos(e){
