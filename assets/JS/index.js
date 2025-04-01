@@ -43,7 +43,7 @@ function redirecionamentoHome(e){
     }
     
     
-    else if(window.location.pathname.includes("/produtos/index.html"))
+    else if(window.location.pathname.includes("/produtos/produtos.html"))
     {
       window.location.assign("/index.html")
     }
@@ -55,7 +55,7 @@ function redirecionamentoHome(e){
 
 function redirecionamentoSecaoProdutos(e){
   e.preventDefault();
-  if (window.location.pathname.includes("/produtos/index.html"))
+  if (window.location.pathname.includes("/produtos/produtos.html"))
     {
       window.scrollTo({
       top: 0,
@@ -63,7 +63,7 @@ function redirecionamentoSecaoProdutos(e){
       });
     }
   else
-  window.location.assign("./produtos/index.html");
+  window.location.assign("./produtos/produtos.html");
 }
 
 function redirecionamentoProduto(e, produtoPath)
@@ -77,7 +77,7 @@ function redirecionamentoProduto(e, produtoPath)
       });
     }
     
-    else if(window.location.pathname.includes("/produtos/index.html"))
+    else if(window.location.pathname.includes("/produtos/produtos.html"))
       {
         window.location.assign("/produto/" + produtoPath)
       }
