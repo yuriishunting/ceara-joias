@@ -23,8 +23,12 @@ const instagramIcon = document.querySelector(".instagram-icon")
 const facebookIcon = document.querySelector(".facebook-icon")
 const whatsappIcon = document.querySelector(".whatsapp-icon")
 
-
-
+// Products
+const brinco_de_gota = document.querySelector(".brinco-de-gota")
+const ponto_de_luz = document.querySelector(".ponto-de-luz")
+const pulseira_baiana = document.querySelector(".pulseira-baiana")
+const prata_grumet = document.querySelector(".prata-grumet")
+const conjunto_trevo = document.querySelector(".conjunto-trevo")
 // PRODUTOS ------------------------------------------------
 
 
@@ -43,9 +47,9 @@ function redirecionamentoHome(e){
     }
     
     
-    else if(window.location.pathname.includes("produtos.html"))
+    else if(window.location.pathname.includes("/produtos/"))
     {
-      window.location.href = 'index.html';
+      window.location.href = '/index.html';
     }
     
     
@@ -62,13 +66,18 @@ function redirecionamentoSecaoProdutos(e){
       behavior: 'smooth' // Rolagem suave
       });
     }
+
+    else if(window.location.pathname.includes("/produtos/"))
+      {
+        window.location.href = '/produtos.html';
+      }
+
   else
   window.location.href = 'produtos.html';
 }
 
-function redirecionamentoProduto(e, produtoPath)
+function redirecionamentoProduto(produtoPath)
 {
-  e.preventDefault();
   if (window.location.pathname.includes("/produtos/" + produtoPath))
     {
       window.scrollTo({
@@ -77,13 +86,8 @@ function redirecionamentoProduto(e, produtoPath)
       });
     }
     
-    else if(window.location.pathname.includes("/produtos/produtos.html"))
-      {
-        window.location.assign("/produtos/" + produtoPath)
-      }
-    
     else
-    window.location.assign("produtos/" + produtoPath);
+    window.location.href = 'produtos/' + produtoPath;
 }
 
 // Event Listeners
@@ -104,7 +108,7 @@ productsButton.addEventListener('click', redirecionamentoSecaoProdutos)
 
 
 // Menu
-menuButton.addEventListener("click", () => {
+menuButton.addEventListener('click', () => {
     navbar.classList.toggle("show-menu");  // remove ou coloca a classe show-menu ao clicar
 }
 )
@@ -123,10 +127,23 @@ facebookIcon.addEventListener('click', () => {
   window.open('https://www.instagram.com/ceara.joias/', '_blank');
 });
 whatsappIcon.addEventListener('click', () => {
-  window.open('https://api.whatsapp.com/send/?phone=5547999169944&text&type=phone_number&app_absent=0', '_blank');
+  window.open('https://api.whatsapp.com/send/?phone=5547988504077&text&type=phone_number&app_absent=0', '_blank');
 });
 
 
 
 // Produto --------------------------------
+if(brinco_de_gota)
+brinco_de_gota.addEventListener('click',  () => redirecionamentoProduto('brinco-de-gota.html'))
 
+if(ponto_de_luz)
+  ponto_de_luz.addEventListener('click',  () => redirecionamentoProduto('ponto-de-luz.html'))
+
+if(prata_grumet)
+  prata_grumet.addEventListener('click',  () => redirecionamentoProduto('prata-grumet.html'))
+
+if(pulseira_baiana)
+  pulseira_baiana.addEventListener('click',  () => redirecionamentoProduto('pulseira-baiana.html'))
+
+if(conjunto_trevo)
+  conjunto_trevo.addEventListener('click',  () => redirecionamentoProduto('conjunto-trevo.html'))
