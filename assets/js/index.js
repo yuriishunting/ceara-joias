@@ -45,12 +45,12 @@ function redirecionamentoHome(e){
     
     else if(window.location.pathname.includes("produtos.html"))
     {
-      window.location.assign("/index.html")
+      window.location.href = 'index.html';
     }
     
     
     else
-    window.location.assign("index.html");
+    window.location.href = 'index.html';
 }
 
 function redirecionamentoSecaoProdutos(e){
@@ -63,7 +63,7 @@ function redirecionamentoSecaoProdutos(e){
       });
     }
   else
-  window.location.assign("./produtos.html");
+  window.location.href = 'produtos.html';
 }
 
 function redirecionamentoProduto(e, produtoPath)
