@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ceará Jóias - Nossas Peças</title>
+  <link rel="stylesheet" href="/assets/CSS/style.css">
+  <script src="/assets/JS/index.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar (mantido igual) -->
+  <div class="navbar">
+    <div class="header-inner-content">
+      <h1 class="logo" id="logo">Ceará <span>Jóias</span></h1>
+      <nav>
+        <ul>
+          <li class="nav-home">Home</li>
+          <li class="nav-pecas active">Peças</li>
+          <li class="nav-sobre">Sobre</li>
+          <li class="nav-contato">Contato</li>
+          <li class="nav-perfil">Perfil</li>
+        </ul>
+      </nav>
+      <div class="nav-icon-container">
+        <img src="/imagens/icons/cart.png" alt="Carrinho">
+        <img src="/imagens/icons/menu.png" class="menu-button" alt="Menu">
+      </div>
+    </div>
+  </div>
+
+  <!-- Conteúdo Principal da Listagem de Produtos -->
+  <main class="products-page">
+    <div class="page-inner-content">
+      <!-- Filtros e Ordenação -->
+      <div class="products-controls">
+        <div class="search-filter">
+          <input type="text" placeholder="Buscar produtos..." class="search-input">
+          <select class="category-filter">
+            <option value="all">Todas Categorias</option>
+            <option value="brincos">Brincos</option>
+            <option value="correntes">Correntes</option>
+            <option value="pulseiras">Pulseiras</option>
+            <option value="pingentes">Pingentes</option>
+            <option value="prata">Prata 925</option>
+          </select>
+        </div>
+        <div class="sorting">
+          <span>Ordenar por:</span>
+          <select class="sort-options">
+            <option value="recentes">Mais recentes</option>
+            <option value="preco-asc">Preço: menor para maior</option>
+            <option value="preco-desc">Preço: maior para menor</option>
+            <option value="popular">Mais populares</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Listagem de Produtos -->
+      <div class="products-grid">
+        <!-- Produto 1 -->
+        <div class="product-card">
+          <div class="product-badge">Novo</div>
+          <img src="/imagens/produtos/ponto de luz.png" alt="Ponto de Luz" class="product-image">
+          <div class="product-info">
+            <h3 class="product-name">Ponto de Luz</h3>
+            <p class="product-description">Brinco folheado a ouro 18k com detalhe em ponto de luz</p>
+            <div class="product-price-container">
+              <span class="product-price">R$ 89,90</span>
+              <span class="product-installments">ou 3x de R$ 29,97</span>
+            </div>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="product-card">
+          <img src="/imagens/produtos/brinco de gota.png" alt="Brinco Gota" class="product-image">
+          <div class="product-info">
+            <h3 class="product-name">Brinco Gota</h3>
+            <p class="product-description">Brinco em prata 925 com formato de gota</p>
+            <div class="product-price-container">
+              <span class="product-price">R$ 129,90</span>
+              <span class="product-installments">ou 4x de R$ 32,48</span>
+            </div>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="product-card">
+          <div class="product-badge">Mais Vendido</div>
+          <img src="/imagens/produtos/pulseira baiana.png" alt="Pulseira Baiana" class="product-image">
+          <div class="product-info">
+            <h3 class="product-name">Pulseira Baiana</h3>
+            <p class="product-description">Pulseira folheada a ouro 18k com detalhes em zircônia</p>
+            <div class="product-price-container">
+              <span class="product-price">R$ 159,90</span>
+              <span class="product-installments">ou 5x de R$ 31,98</span>
+            </div>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="product-card">
+          <img src="/imagens/produtos/prata-grumet.png" alt="Corrente Grumet" class="product-image">
+          <div class="product-info">
+            <h3 class="product-name">Corrente Grumet Prata 925</h3>
+            <p class="product-description">Corrente em prata 925 com 50 cm de comprimento</p>
+            <div class="product-price-container">
+              <span class="product-price">R$ 229,90</span>
+              <span class="product-installments">ou 6x de R$ 38,32</span>
+            </div>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+
+
+        <!-- Produto 6 -->
+        <div class="product-card">
+          <div class="product-badge">Promoção</div>
+          <img src="/imagens/produtos/conjunto trevo.jpg" alt="Colar Trevo" class="product-image">
+          <div class="product-info">
+            <h3 class="product-name">Colar Trevo</h3>
+            <p class="product-description">Colar folheado a ouro 18k com pingente de trevo</p>
+            <div class="product-price-container">
+              <span class="product-price old-price">R$ 199,90</span>
+              <span class="product-price">R$ 149,90</span>
+              <span class="product-installments">ou 5x de R$ 29,98</span>
+            </div>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paginação -->
+      <div class="pagination">
+        <button class="page-button disabled"><</button>
+        <button class="page-button active">1</button>
+        <button class="page-button">2</button>
+        <button class="page-button">3</button>
+        <button class="page-button">></button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer (mantido igual) -->
+  <footer class="yellow-background">
+    <div class="page-inner-content footer-content">
+      <div class="follow-us">
+        <p>Siga-nos para ficar por dentro das novidades</p>
+        <div>
+          <img src="/imagens/icons/icon.ig.png" alt="Instagram" class="instagram-icon">
+          <img src="/imagens/icons/facebook-icon.png" alt="Facebook" class="facebook-icon">
+          <img src="/imagens/icons/whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon">
+        </div>  
+      </div>
+
+      <div class="logo-footer">
+        <h1 class="logo">Ceará <span>Jóias</span></h1>
+        <p>As melhores peças folheadas a ouro do Brasil para você arrasar no seu visual.</p> 
+      </div>
+        
+      <div class="links-footer">
+        <h3>Links</h3> 
+        <ul>
+          <li>Blog Post</li>
+          <li>Políticas</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="page-inner-content">
+    <div class="page-inner-content copyright">
+      <p>Copyright 2025 - Yuri Uchoa - Todos os Direitos Reservados</p>
+    </div>
+  </footer>
+</body>
+
+</html>
