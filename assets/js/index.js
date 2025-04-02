@@ -47,7 +47,7 @@ function redirecionamentoHome(e){
     }
     
     else
-    window.location.href = '/index.html';
+    window.location.href = 'index.html';
 }
 
 function redirecionamentoSecaoProdutos(e){
@@ -61,7 +61,7 @@ function redirecionamentoSecaoProdutos(e){
     }
 
   else
-  window.location.href = '/produtos.html';
+  window.location.href = 'produtos.html';
 }
 
 function redirecionamentoProduto(produtoPath)
