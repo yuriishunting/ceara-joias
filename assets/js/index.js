@@ -49,7 +49,7 @@ function redirecionamentoHome(e){
     
     
     else
-    window.location.href = 'index.html';
+    window.location.href = 'https://yuriishunting.github.io/ceara-joias/index.html';
 }
 
 function redirecionamentoSecaoProdutos(e){
@@ -63,7 +63,7 @@ function redirecionamentoSecaoProdutos(e){
     }
 
   else
-  window.location.href = 'produtos.html';
+  window.location.href = 'https://yuriishunting.github.io/ceara-joias/produtos.html';
 }
 
 function redirecionamentoProduto(produtoPath)
@@ -77,7 +77,7 @@ function redirecionamentoProduto(produtoPath)
     }
     
     else
-    window.location.href = 'produtos/' + produtoPath;
+    window.location.href = 'https://yuriishunting.github.io/ceara-joias/produtos/' + produtoPath;
 }
 
 // Event Listeners
