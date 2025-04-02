@@ -1,12 +1,3 @@
-// URL PATH
-function getCorrectPath(path) {
-    const isProd = window.location.hostname === 'yuriishunting.github.io';
-    const basePath = isProd ? '/ceara-joias' : '';
-    
-  
-    return `${basePath}/${path}`.replace(/([^:]\/)\/+/g, '$1');
-}
-
 // Dom Caching
 
 
@@ -55,8 +46,15 @@ function redirecionamentoHome(e){
       });
     }
     
+    
+    else if(window.location.pathname.includes("/produtos.html"))
+    {
+      window.location.href = '/index.html';
+    }
+    
+    
     else
-    window.location.href = getCorrectPath('index.html');
+    window.location.href = 'index.html';
 }
 
 function redirecionamentoSecaoProdutos(e){
@@ -69,8 +67,13 @@ function redirecionamentoSecaoProdutos(e){
       });
     }
 
+    else if(window.location.pathname.includes("/produtos.html"))
+      {
+        window.location.href = '/produtos.html';
+      }
+
   else
-  window.location.href = getCorrectPath('produtos.html');
+  window.location.href = 'produtos.html';
 }
 
 function redirecionamentoProduto(produtoPath)
@@ -84,7 +87,7 @@ function redirecionamentoProduto(produtoPath)
     }
     
     else
-    window.location.href = getCorrectPath('produtos/' + produtoPath);
+    window.location.href = 'produtos/' + produtoPath;
 }
 
 // Event Listeners
