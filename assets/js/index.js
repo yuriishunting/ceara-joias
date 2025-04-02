@@ -1,6 +1,12 @@
-// URL HOSTNAME
+// URL PATH
+function getCorrectPath(path) {
+    const isProd = window.location.hostname === 'yuriishunting.github.io';
+    const basePath = isProd ? '/ceara-joias' : '';
+    
+  
+    return `${basePath}/${path}`.replace(/([^:]\/)\/+/g, '$1');
+}
 
-const baseURL = window.location.hostname === 'yuriishunting.github.io/ceara-joias/';
 // Dom Caching
 
 
@@ -50,7 +56,7 @@ function redirecionamentoHome(e){
     }
     
     else
-    window.location.href = baseURL + 'index.html'
+    window.location.href = getCorrectPath('index.html');
 }
 
 function redirecionamentoSecaoProdutos(e){
@@ -64,7 +70,7 @@ function redirecionamentoSecaoProdutos(e){
     }
 
   else
-  window.location.href = baseURL + 'produtos.html'
+  window.location.href = getCorrectPath('produtos.html');
 }
 
 function redirecionamentoProduto(produtoPath)
@@ -78,7 +84,7 @@ function redirecionamentoProduto(produtoPath)
     }
     
     else
-    window.location.href = baseURL + 'produtos/' + produtoPath;
+    window.location.href = getCorrectPath('produtos/' + produtoPath);
 }
 
 // Event Listeners
