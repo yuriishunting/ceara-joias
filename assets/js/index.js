@@ -79,7 +79,7 @@ function redirecionamentoProduto(produtoPath)
     }
     
     else
-    window.location.href = '/produtos/' + produtoPath;
+    window.location.href = baseURL + 'produtos/' + produtoPath;
 }
 
 // Event Listeners
