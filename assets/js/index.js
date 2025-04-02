@@ -46,13 +46,6 @@ function redirecionamentoHome(e){
       });
     }
     
-    
-    else if(window.location.pathname.includes("/produtos.html"))
-    {
-      window.location.href = '/index.html';
-    }
-    
-    
     else
     window.location.href = 'index.html';
 }
@@ -66,11 +59,6 @@ function redirecionamentoSecaoProdutos(e){
       behavior: 'smooth' // Rolagem suave
       });
     }
-
-    else if(window.location.pathname.includes("/produtos.html"))
-      {
-        window.location.href = '/produtos.html';
-      }
 
   else
   window.location.href = 'produtos.html';
