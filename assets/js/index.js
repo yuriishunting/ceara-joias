@@ -1,7 +1,6 @@
 // URL HOSTNAME
 
-const baseURL = window.location.hostname === 'yuriishunting.github.io' ? '/ceara-joias/' : '/';
-
+const baseURL = window.location.hostname === 'yuriishunting.github.io/ceara-joias/';
 // Dom Caching
 
 
