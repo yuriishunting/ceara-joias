@@ -47,11 +47,15 @@ function redirecionamentoHome(e){
     }
     
     
-    else if(window.location.pathname.includes("/produtos/"))
+    else if(window.location.pathname.includes("/produtos"))
     {
       window.location.href = '/index.html';
     }
     
+    else if(window.location.pathname.includes("/produtos/"))
+      {
+        window.location.href = './index.html';
+      }
     
     else
     window.location.href = 'index.html';
@@ -67,7 +71,7 @@ function redirecionamentoSecaoProdutos(e){
       });
     }
 
-    else if(window.location.pathname.includes("/produtos/"))
+    else if(window.location.pathname.includes("/produtos"))
       {
         window.location.href = '/produtos.html';
       }
