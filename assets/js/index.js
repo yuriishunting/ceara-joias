@@ -1,3 +1,7 @@
+// URL HOSTNAME
+
+const baseURL = window.location.hostname === 'yuriishunting.github.io' ? '/ceara-joias/' : '/';
+
 // Dom Caching
 
 
@@ -47,7 +51,7 @@ function redirecionamentoHome(e){
     }
     
     else
-    window.location.href = 'index.html';
+    window.location.href = baseURL + 'index.html'
 }
 
 function redirecionamentoSecaoProdutos(e){
@@ -61,7 +65,7 @@ function redirecionamentoSecaoProdutos(e){
     }
 
   else
-  window.location.href = 'produtos.html';
+  window.location.href = baseURL + 'produtos.html'
 }
 
 function redirecionamentoProduto(produtoPath)
