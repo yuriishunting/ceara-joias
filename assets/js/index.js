@@ -38,51 +38,36 @@ function redirecionamentoHome(e){
     e.preventDefault(); 
     
     
-    if (window.location.pathname.includes("index.html"))
-    {
+    if (window.location.pathname.includes("index.html")) {
       window.scrollTo({
-      top: 0,
-      behavior: 'smooth' // Rolagem suave
+        top: 0,
+        behavior: "smooth", // Rolagem suave
       });
-    }
-    
-    
-    else if(window.location.pathname.includes("/produtos"))
-    {
-      window.location.href = '/index.html';
-    }
-    
-    else if(window.location.pathname.includes("/produtos/"))
-      {
-        window.location.href = '../index.html';
-      }
-    
-    else
-    window.location.href = 'index.html';
+    } 
+    else if (window.location.pathname.includes("/produtos/")) {
+      window.location.href = "../index.html";
+    } 
+    else if (window.location.pathname.includes("/produtos")) {
+      window.location.href = "/index.html";
+    } 
+    else window.location.href = "index.html";
 }
 
 function redirecionamentoSecaoProdutos(e){
   e.preventDefault();
-  if (window.location.pathname.includes("produtos.html"))
-    {
-      window.scrollTo({
+  if (window.location.pathname.includes("produtos.html")) {
+    window.scrollTo({
       top: 0,
-      behavior: 'smooth' // Rolagem suave
-      });
-    }
-
-  else if(window.location.pathname.includes("/produtos"))
-      {
-        window.location.href = '/produtos.html';
-      }
-
-  else if(window.location.pathname.includes("/produtos/"))
-        {
-          window.location.href = '../produtos.html';
-        } 
-      
-  else
-  window.location.href = 'produtos.html';
+      behavior: "smooth", // Rolagem suave
+    });
+  } 
+  else if (window.location.pathname.includes("/produtos/")) {
+    window.location.href = "../produtos.html";
+  } 
+  else if (window.location.pathname.includes("/produtos")) {
+    window.location.href = "/produtos.html";
+  } 
+  else window.location.href = "produtos.html";
 }
 
 function redirecionamentoProduto(produtoPath)
