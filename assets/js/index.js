@@ -46,6 +46,10 @@ function redirecionamentoHome(e){
       });
     }
     
+    else if (window.location.pathname.includes("/produtos"))
+    {
+      window.location.href = '../../index.html';
+    }
     
     
     else
@@ -60,7 +64,13 @@ function redirecionamentoSecaoProdutos(e){
       top: 0,
       behavior: 'smooth' // Rolagem suave
       });
+    } 
+
+  else if (window.location.pathname.includes("/produtos"))
+    {
+      window.location.href = '../../index.html';
     }
+    
 
   else
   window.location.href = 'https://yuriishunting.github.io/ceara-joias/produtos.html';
